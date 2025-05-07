@@ -14,7 +14,7 @@ async function fetchDebt() {
     setInterval(() => {
         let elapsed = (Date.now() - startTime) / 86400000;
         let todayDebt = totDebt + (elapsed * change);
-        document.getElementById("tot-debt").innerHTML = `$${Number(todayDebt.toFixed(2)).toLocaleString('en-US')}`;
+        document.getElementById("tot-debt").innerHTML = `$${Number(todayDebt.toFixed(2)).toLocaleString('en-US', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}`;
     }, 50);
 }
 fetchDebt();
