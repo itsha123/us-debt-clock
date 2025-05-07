@@ -18,3 +18,15 @@ async function fetchDebt() {
     }, 50);
 }
 fetchDebt();
+function statInfo(id) {
+    if (id == "tot-debt") {
+        if (document.getElementById("tooltip-text").innerHTML == "") {
+            document.getElementById("tooltip-text").innerHTML = "All outstanding US debt.";
+            document.getElementById("source-text").innerHTML = "Source: US Treasury";
+            document.getElementById("source-text").setAttribute("href", "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/");
+        } else {
+            document.getElementById("tooltip-text").innerHTML = "";
+            document.getElementById("source-text").innerHTML = "";
+        }
+    }
+}

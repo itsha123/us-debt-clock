@@ -6,7 +6,13 @@
     </head>
     <body>
         <h1 id="header">US Debt Clock</h1>
-        <div id="tot-debt-container"><p id="tot-debt" class="stats"></p></div>
+        <div id="tooltip">
+            <p id="tooltip-text"></p>
+            <a id="source-text"></a>
+        </div>
+        <div id="tot-debt-container" onclick="statInfo('tot-debt')">
+            <p id="tot-debt" class="stats"></p>
+        </div>
         <script src="scripts.js"></script>
     </body>
 </html>

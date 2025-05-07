@@ -14,10 +14,34 @@ body {
 #tot-debt {
     border-style: solid;
     border-radius: 14px;
-    border-width: 10px;
+    border-width: 8px;
     border-color: red;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 #tot-debt-container {
-    width: 400px;
+    width: fit-content;
     margin: auto;
+    cursor: pointer;
+}
+#tooltip {
+    margin: auto;
+    border-style: solid;
+    border-radius: 14px;
+    border-width: 8px;
+    border-color: black;
+    width: 400px;
+    height: 100px;
+    position: relative;
+}
+#tooltip-text {
+    margin: auto;
+    padding: 8px;
+}
+#source-text {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    color: black;
+    text-decoration: none;
 }
