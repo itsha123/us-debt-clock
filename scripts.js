@@ -9,8 +9,9 @@ async function fetchDebt() {
     }
     change = totChange / 90;
     const totDebt = Number(json.data[0].tot_pub_debt_out_amt);
+    const lastRecordDate = new Date(json.data[0].record_date);
     const now = new Date();
-    const startTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0).getTime();
+    const startTime = new Date(lastRecordDate.getFullYear(), lastRecordDate.getMonth(), lastRecordDate.getDate() + 1, 0, 0, 0, 0).getTime();
     setInterval(() => {
         let elapsed = (Date.now() - startTime) / 86400000;
         let todayDebt = totDebt + (elapsed * change);
