@@ -1,6 +1,6 @@
 # US Debt Clock
 
-An open-source project to visualize the current US debt using real, fact-based data. Created as an alternative to [usdebtclock.org](https://usdebtclock.org) which provides inaccurate statistics.
+An open-source project to visualize the current US debt using real, fact-based data. Created as an alternative to [usdebtclock.org](https://usdebtclock.org) and similar websites which provide inaccurate statistics.
 
 ## Features
 - Real-time visualization of US debt changes
