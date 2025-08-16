@@ -19,4 +19,5 @@ The visualization is calculated using these steps
 Simply download everything in a folder and open index.html. Or host on your favorite static hosting site. No special software needed, just a web browser.
 
 ## Demo
+View here: [usdebtclock.hamidmossa.me](usdebtclock.hamidmossa.me)
 ![screenshot](image.png)
