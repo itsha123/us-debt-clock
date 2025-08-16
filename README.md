@@ -13,7 +13,7 @@ The visualization is calculated using these steps
 2. Calculate the daily change in debt for every data point and add it all together.
 3. Compute the average daily rate of change by dividing the total change by 90 days.
 4. Use the average daily rate of change to project the debt starting from one day after the last available data point.
-5. Perform calculations 10 times per second to create smooth animations.
+5. Perform calculations 20 times per second to create smooth animations.
 
 ## Getting Started
 Simply download everything in a folder and open index.html. Or host on your favorite static hosting site. No special software needed, just a web browser.
