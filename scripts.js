@@ -32,7 +32,7 @@ async function fetchDebt() {
       const elapsedDays = (Date.now() - startTime) / 86400000;
       const todayDebt = totDebt + (elapsedDays * avgChange);
       document.getElementById("tot-debt").textContent =
-        todayDebt.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        "$" + todayDebt.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }, 50);
   }
   
